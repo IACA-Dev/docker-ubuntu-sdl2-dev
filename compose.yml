@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   sdl2-dev:
     build:

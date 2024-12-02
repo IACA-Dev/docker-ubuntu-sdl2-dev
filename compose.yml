@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  sdl2-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2222:22"
+    environment:
+      - DISPLAY=:0
+      - XAUTHORITY=/mnt/xauthority.d/Xauthority
+    volumes:
+      - /tmp/:/mnt/xauthority.d
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    stdin_open: true
+    tty: true

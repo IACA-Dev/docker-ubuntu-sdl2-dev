@@ -2,4 +2,6 @@
 
 service ssh start
 
-journalctl -f
+echo "🚀 SSH is available on port 2222 : user = virtual / password = iaca."
+
+bash
